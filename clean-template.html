@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		/* CSS Here */
+		body {
+			margin: 5%;
+		}
+
+		.a-sentence {
+			margin: 75px 0px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="a-sentence">
+		<span id="zero">This</span>
+		<span id="one"> is </span>
+		<span id="two">a </span>
+		<span id="three">sentence</span>
+		<span id="four">that</span>
+		<span id="five">lives</span>
+		<span id="six">within</span>
+		<span id="seven">many</span>
+		<span id="eight">spans</span>
+		<span id="nine">on</span>
+		<span id="ten">an</span>
+		<span id="eleven">html</span>
+		<span id="twelve">page.</span>
+		<span id="thirteen">page.</span>
+		<span id="fourteen">page.</span>
+	</h1>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Movie</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Data Goes Here -->
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>Gump Forrest</td>
+				<td>40</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+	<script>
+		var theArray = [' at', ' I', ' comment?', ' advice.', ' the', ' sarcastic', ' interest', ' great', ' I', ' Can', ' am', ' not', ' a', ' in', ' you'];
+
+		var getZero = document.getElementById('zero');
+		var getOne = document.getElementById('one');
+		var getTwo = document.getElementById('two');
+		var getThree = document.getElementById('three');
+		var getFour = document.getElementById('four');
+		var getFive = document.getElementById('five');
+		var getSix = document.getElementById('six');
+		var getSeven = document.getElementById('seven');
+		var getEight = document.getElementById('eight');
+		var getNine = document.getElementById('nine');
+		var getTen = document.getElementById('ten');
+		var getEleven = document.getElementById('eleven');
+		var getTwelve = document.getElementById('twelve');
+		var getThirteen = document.getElementById('thirteen');
+		var getFourteen = document.getElementById('fourteen');
+
+		getZero.textContent = theArray[1];
+		getOne.textContent = theArray[10];
+		getTwo.textContent = theArray[11];
+		getThree.textContent = theArray[7];
+		getFour.textContent = theArray[0];
+		getFive.textContent = theArray[4];
+		getSix.textContent = theArray[3];
+		getSeven.textContent = theArray[9];
+		getEight.textContent = theArray[8];
+		getNine.textContent = theArray[6];
+		getTen.textContent = theArray[14];
+		getEleven.textContent = theArray[13];
+		getTwelve.textContent = theArray[12];
+		getThirteen.textContent = theArray[5];
+		getFourteen.textContent = theArray[2];
+	</script>
+</body>
+
+</html>

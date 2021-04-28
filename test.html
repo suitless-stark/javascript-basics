@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    .container {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: lavender;
+      padding: 10px;
+      border-radius: 100px;
+      color: brown;
+    }
+
+    .update {
+      background-color: navy;
+      border: none;
+      padding: 25px;
+      color: white;
+      border-radius: 100px;
+      width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="student">
+      <h1>Student 1</h1>
+      <h2>Name : <span id="name">blank</span></h2>
+      <h2>Movie : <span id="movie">blank</span></h2>
+      <h2>Food : <span id="food">blank</span></h2>
+    </div><br>
+    <div class="student">
+      <h1>Student 2</h1>
+      <h2>Name : <span id="name2">blank</span></h2>
+      <h2>Movie : <span id="movie2">blank</span></h2>
+      <h2>Food : <span id="food2">blank</span></h2>
+    </div><br>
+    <div class="student">
+      <h1>Student 3</h1>
+      <h2>Name : <span id="name3">blank</span></h2>
+      <h2>Movie : <span id="movie3">blank</span></h2>
+      <h2>Food : <span id="food3">blank</span></h2>
+    </div><br>
+    <button type="button" class="update" id="update">Update All</button>
+
+  </div>
+
+  <script>
+
+    var getUpdate = document.getElementById('update');
+    getUpdate.onclick = function() {
+
+      setTimeOut(function () {
+        var newName = 'Troy';
+        var newMovie = 'The Conjuring';
+        var newFood = 'Pasta';
+        var getName = document.getElementById('name');
+        var getMovie = document.getElementById('movie');
+        var getFood = document.getElementById('food');
+        getName.textContent = newName;
+        getMovie.textContent = newMovie;
+        getFood.textContent = newFood;
+      }, 1000);
+
+      setTimeOut(function () {
+        var newName2 = 'James';
+        var newMovie2 = 'Star Wars V';
+        var newFood2 = 'Sushi';
+        var getName2 = document.getElementById('name2');
+        var getMovie2 = document.getElementById('movie2');
+        var getFood2 = document.getElementById('food2');
+        getName2.textContent = newName2;
+        getMovie2.textContent = newMovie2;
+        getFood2.textContent = newFood2;
+      }, 2000);
+
+      setTimeOut(function () {
+        var newName3 = 'Matt';
+        var newMovie3 = 'Snow Piercing';
+        var newFood3 = 'Lasagna';
+        var getName3 = document.getElementById('name3');
+        var getMovie3 = document.getElementById('movie3');
+        var getFood3 = document.getElementById('food3');
+        getName3.textContent = newName3;
+        getMovie3.textContent = newMovie3;
+        getFood3.textContent = newFood3;
+      }, 3000);
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Basic Statements & Variables</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .content {
+      border: 1px solid #888;
+      width: 50%;
+      margin: 0 auto;
+      padding: 25px;
+      margin-top: 80px;
+    }
+
+    button {
+      margin-top: 20px;
+    }
+
+    .cost {
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content" id="content">
+    <h2>Apple Price Total</h2>
+    <div id="cost" class="cost">
+      Cost: $<span id="price">5</span> per apple
+    </div>
+    <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+  </div>
+
+  <script>
+    // var getCost = document.getElementById('cost');
+    // console.log(getCost);
+    // console.dir(getCost);
+    // var newApplePrice = 'Cost: $10 per apple';
+    // var iPhone11ProPrice = 'Cost: $1700 per phone';
+    // var iPhone12ProPrice = 'Cost: $2000 per phone';
+    // var getCost = document.getElementById('cost');
+    // console.dir(getCost.textContent);
+    // getCost.textContent = newApplePrice;
+
+    // var newPrice = 10;
+    // // var newPriceAsString = '10';
+    // var getPrice = document.getElementById('price');
+    // console.dir(getPrice.textContent);
+    // getPrice.textContent = newPrice;
+    // console.dir(window);
+
+    var getButton = document.getElementById('calculate');
+
+    getButton.onclick = function () {
+      var newPrice = 10;
+      var getPrice = document.getElementById('price');
+      console.dir(getPrice.textContent);
+      getPrice.textContent = newPrice;
+    };
+  </script>
+</body>
+
+</html>
